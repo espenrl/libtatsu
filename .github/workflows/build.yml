@@ -37,7 +37,7 @@ jobs:
         github_token: ${{secrets.GITHUB_TOKEN}}
         workflow: build.yml
         name: libplist-latest_${{env.target_triplet}}
-        repo: libimobiledevice/libplist
+        repo: espenrl/libplist
     - name: install external dependencies
       run: |
           mkdir extract
@@ -84,7 +84,7 @@ jobs:
         github_token: ${{secrets.GITHUB_TOKEN}}
         workflow: build.yml
         name: libplist-latest_macOS
-        repo: libimobiledevice/libplist
+        repo: espenrl/libplist
     - name: install external dependencies
       run: |
           mkdir extract
@@ -185,7 +185,7 @@ jobs:
         github_token: ${{secrets.GITHUB_TOKEN}}
         workflow: build.yml
         name: libplist-latest_${{ matrix.arch }}-${{ env.dest }}
-        repo: libimobiledevice/libplist
+        repo: espenrl/libplist
     - name: install external dependencies
       run: |
           mkdir extract
